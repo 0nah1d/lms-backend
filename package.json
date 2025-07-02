@@ -1,0 +1,25 @@
+{
+    "name": "library-management-system",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon app.js",
+        "swagger": "node swagger.js",
+        "fix": "prettier --write .",
+        "createadmin": "node script/createAdmin.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "chalk": "^4.1.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "joi": "^17.13.3",
+        "jsonwebtoken": "^9.0.0",
+        "mongoose": "^7.0.0",
+        "nodemon": "^3.1.10",
+        "prettier": "^3.6.2",
+        "swagger-autogen": "^2.23.7",
+        "swagger-ui-express": "^5.0.0"
+    }
+}
