@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express'
-import Issue from '../models/Issue'
-import Book from '../models/Book'
 import auth from '../middleware/auth'
+import Book from '../models/Book'
+import Issue from '../models/Issue'
 
 const router = express.Router()
 
@@ -32,7 +32,7 @@ router.post('/', auth(['student']), async (req: any, res: Response) => {
         await issue.save()
         await Book.findByIdAndUpdate(bookId, { $inc: { stock: -1 } })
 
-        res.status(201).json(issue)
+        res.status(201).json({ message: 'Book issue requested successfully' })
     } catch (error: any) {
         res.status(400).json({ message: error.message })
     }
@@ -53,7 +53,7 @@ router.put(
                 res.status(404).json({ message: 'Issue not found' })
                 return
             }
-            res.json(issue)
+            res.json({ message: 'Book issue approved successfully' })
         } catch (error: any) {
             res.status(400).json({ message: error.message })
         }
@@ -77,7 +77,7 @@ router.put(
             }
 
             await Book.findByIdAndUpdate(issue.book, { $inc: { stock: 1 } })
-            res.json(issue)
+            res.json({ message: 'Book returned successfully' })
         } catch (error: any) {
             res.status(400).json({ message: error.message })
         }

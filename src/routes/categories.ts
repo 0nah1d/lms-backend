@@ -26,7 +26,7 @@ router.post(
         try {
             const category = new Category({ name, description })
             await category.save()
-            res.status(201).json(category)
+            res.status(201).json({ message: 'Category created successfully' })
         } catch (error: any) {
             res.status(400).json({ message: error.message })
         }
@@ -53,7 +53,7 @@ router.put(
                 res.status(404).json({ message: 'Category not found' })
                 return
             }
-            res.json(category)
+            res.json({ message: 'Category updated successfully' })
         } catch (error: any) {
             res.status(400).json({ message: error.message })
         }
@@ -71,7 +71,7 @@ router.delete(
                 res.status(404).json({ message: 'Category not found' })
                 return
             }
-            res.json({ message: 'Category deleted' })
+            res.json({ message: 'Category deleted successfully' })
         } catch (error: any) {
             res.status(400).json({ message: error.message })
         }

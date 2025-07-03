@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express'
+import { NextFunction, Request, Response } from 'express'
 import jwt, { JwtPayload } from 'jsonwebtoken'
 
 interface AuthRequest extends Request {
@@ -10,8 +10,8 @@ const auth = (roles: string[] = []) => {
         const token = req.header('Authorization')?.replace('Bearer ', '')
 
         if (!token) {
-            res.status(401).json({ message: 'No token provided' })
-            return // exit middleware, no return value
+            res.status(401).json({ message: 'Unauthorized access' })
+            return
         }
 
         try {
@@ -23,7 +23,9 @@ const auth = (roles: string[] = []) => {
                 typeof decoded === 'object' &&
                 !roles.includes(decoded.role)
             ) {
-                res.status(403).json({ message: 'Access denied' })
+                res.status(403).json({
+                    message: 'You have no permission to perform this action',
+                })
                 return
             }
 

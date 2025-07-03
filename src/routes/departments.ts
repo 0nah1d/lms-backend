@@ -26,7 +26,7 @@ router.post(
         try {
             const department = new Department({ name, description })
             await department.save()
-            res.status(201).json(department)
+            res.status(201).json({ message: 'Department created successfully' })
         } catch (error: any) {
             res.status(400).json({ message: error.message })
         }
@@ -53,7 +53,7 @@ router.put(
                 res.status(404).json({ message: 'Department not found' })
                 return
             }
-            res.json(department)
+            res.json({ message: 'Department updated successfully' })
         } catch (error: any) {
             res.status(400).json({ message: error.message })
         }
@@ -71,7 +71,7 @@ router.delete(
                 res.status(404).json({ message: 'Department not found' })
                 return
             }
-            res.json({ message: 'Department deleted' })
+            res.json({ message: 'Department deleted successfully' })
         } catch (error: any) {
             res.status(400).json({ message: error.message })
         }
