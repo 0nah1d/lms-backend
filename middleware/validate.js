@@ -1,4 +1,3 @@
-
 const formatJoiErrors = require('../utils/formatJoiErrors')
 
 const validate = (schema) => (req, res, next) => {

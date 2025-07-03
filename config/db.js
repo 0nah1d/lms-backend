@@ -7,11 +7,7 @@ const connectDB = async () => {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
-        console.log(
-            chalk.green(
-                '✓ MongoDB connected on ' + chalk.blue(process.env.MONGODB_URI)
-            )
-        )
+        console.log(chalk.green('✓ MongoDB is connected'))
     } catch (error) {
         console.error(
             chalk.red('✗ Failed to connect to MongoDB:', error.message)

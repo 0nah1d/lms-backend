@@ -7,35 +7,60 @@ const { registerSchema } = require('../validators/userValidator')
 
 router.post('/register', validate(registerSchema), async (req, res) => {
     const { username, email, password, confirm_password } = req.body
-    if (password !== confirm_password) {
-        return res
-            .status(400)
-            .json({ password: 'Password and confirm password do not match' })
-    }
+
     try {
-        const user = new User({ username, email, password, role: 'student' })
-        await user.save()
-        res.status(201).json({ message: 'Student created successfully.' })
+        const existingUser = await User.findOne({
+            $or: [{ email }, { username }],
+        })
+
+        if (existingUser) {
+            const errors = {}
+            if (existingUser.email === email) {
+                errors.email = 'Email already exists'
+            }
+            if (existingUser.username === username) {
+                errors.username = 'Username already exists'
+            }
+            return res.status(400).json(errors)
+        }
+
+        const newUser = new User({ username, email, password })
+        await newUser.save()
+
+        res.status(201).json({ message: 'User created successfully.' })
     } catch (error) {
-        res.status(400).json({ message: error.message })
+        res.status(500).json({ message: error.message })
     }
 })
 
 router.post('/login', async (req, res) => {
     const { username, password } = req.body
+
     try {
-        const user = await User.findOne({ username })
+        const user = await User.findOne({
+            $or: [{ username }, { email: username }],
+        })
+
         if (!user || !(await user.comparePassword(password))) {
             return res
                 .status(401)
-                .json({ password: 'Invalid username or password.' })
+                .json({ password: 'Invalid username/email or password.' })
         }
+
         const token = jwt.sign(
-            { id: user._id, role: user.role },
+            { id: user._id, role: user.role, email: user.email },
             process.env.JWT_SECRET,
-            { expiresIn: '1h' }
+            { expiresIn: '7d' }
         )
-        res.json({ token })
+
+        res.json({
+            token,
+            user: {
+                username: user.username,
+                email: user.email,
+                role: user.role,
+            },
+        })
     } catch (error) {
         res.status(400).json({ message: error.message })
     }
