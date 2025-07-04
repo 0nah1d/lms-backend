@@ -41,7 +41,7 @@ router.post(
                 return
             }
 
-            const newUser = new User({ username, email, password })
+            const newUser = new User({ username, email, password, role: 'student' })
             await newUser.save()
 
             res.status(201).json({ message: 'User created successfully.' })
