@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express'
-import User from '../models/User'
 import jwt from 'jsonwebtoken'
 import validate from '../middleware/validate'
+import User from '../models/User'
 import { registerSchema } from '../validators/userValidator'
 
 const router = express.Router()
@@ -14,7 +14,7 @@ interface RegisterRequestBody {
 }
 
 interface LoginRequestBody {
-    username: string
+    username_or_email: string
     password: string
 }
 
@@ -41,7 +41,12 @@ router.post(
                 return
             }
 
-            const newUser = new User({ username, email, password, role: 'student' })
+            const newUser = new User({
+                username,
+                email,
+                password,
+                role: 'student',
+            })
             await newUser.save()
 
             res.status(201).json({ message: 'User created successfully.' })
@@ -54,11 +59,14 @@ router.post(
 router.post(
     '/login',
     async (req: Request<{}, {}, LoginRequestBody>, res: Response) => {
-        const { username, password } = req.body
+        const { username_or_email, password } = req.body
 
         try {
             const user = await User.findOne({
-                $or: [{ username }, { email: username }],
+                $or: [
+                    { username: username_or_email },
+                    { email: username_or_email },
+                ],
             })
 
             if (!user || !(await user.comparePassword(password))) {
@@ -80,12 +88,13 @@ router.post(
             )
 
             res.json({
-                token,
                 user: {
+                    accessToken: token,
                     username: user.username,
                     email: user.email,
                     role: user.role,
                 },
+                message: 'Login successful.',
             })
         } catch (error: any) {
             res.status(400).json({ message: error.message })

@@ -39,7 +39,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "username": {
+                "username_or_email": {
                   "example": "any"
                 },
                 "password": {
