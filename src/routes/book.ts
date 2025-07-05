@@ -5,6 +5,8 @@ import Department from '../models/Department'
 import { paginate } from '../utils/paginate'
 import { bookSchema } from '../validators/bookValidator'
 import validate from '../middleware/validate'
+import { saveBase64Image } from '../utils/saveBase64Image'
+import { buildAbsoluteUrl } from '../utils/buildAbsoluteUrl'
 
 const router = express.Router()
 
@@ -94,11 +96,20 @@ router.post(
                 return
             }
 
+            // Handle base64 image
+            let imageUrl = null
+            if (image && image.startsWith('data:')) {
+                const relativePath = saveBase64Image(image, 'book', 'bookImage')
+                imageUrl = buildAbsoluteUrl(req, relativePath)
+            } else if (image) {
+                imageUrl = image
+            }
+
             const book = new Book({
                 title,
                 author,
                 genre,
-                image,
+                image: imageUrl,
                 description,
                 book_link,
                 category,
@@ -119,7 +130,7 @@ router.put(
     auth(['admin']),
     async (req: Request<{ id: string }>, res: Response) => {
         try {
-            const { title } = req.body
+            const { title, image } = req.body
 
             if (title) {
                 const existingBook = await Book.findOne({
@@ -127,11 +138,15 @@ router.put(
                     title: { $regex: new RegExp(`^${title}$`, 'i') },
                 })
                 if (existingBook) {
-                    res.status(409).json({
-                        title: 'Book title already exists',
-                    })
+                    res.status(409).json({ title: 'Book title already exists' })
                     return
                 }
+            }
+
+            // Handle base64 image if updated
+            if (image && image.startsWith('data:')) {
+                const relativePath = saveBase64Image(image, 'book', 'bookImage')
+                req.body.image = buildAbsoluteUrl(req, relativePath)
             }
 
             const book = await Book.findByIdAndUpdate(req.params.id, req.body, {

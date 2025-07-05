@@ -39,7 +39,7 @@ async function startServer() {
 
         // Swagger UI
         app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
-        app.use('/uploads', express.static(path.join(__dirname, '../uploads')))
+        app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
 
         app.use('/', homeRoute)
         app.use('/auth', authRoute)
