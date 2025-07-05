@@ -33,3 +33,5 @@ export async function generateSwaggerDocsOnce(): Promise<void> {
     await swagger(outputFile, endpointsFiles, doc)
     console.log('Swagger JSON generated.')
 }
+
+void generateSwaggerDocsOnce()

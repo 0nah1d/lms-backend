@@ -5,7 +5,6 @@ import express, { Application } from 'express'
 import morgan from 'morgan'
 import swaggerUi from 'swagger-ui-express'
 import connectDB from './config/db'
-import { generateSwaggerDocsOnce } from './config/swagger'
 
 import authRoute from './routes/auth'
 import bookRoute from './routes/book'
@@ -34,8 +33,7 @@ app.use(morgan('dev'))
 
 async function startServer() {
     try {
-        await generateSwaggerDocsOnce()
-        const swaggerDocument = require('../swagger.json') // this is fine for now
+        const swaggerDocument = require('../swagger.json')
 
         // Swagger UI
         app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
@@ -60,4 +58,4 @@ async function startServer() {
     }
 }
 
-startServer().then()
+void startServer()
