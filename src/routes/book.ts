@@ -43,7 +43,7 @@ router.get('/', async (req: Request, res: Response) => {
             query,
             page: currentPage,
             limit: perPage,
-            populate: ['category', 'department'],
+            populate: ['department'],
             baseUrl: `${req.protocol}://${req.get('host')}${req.baseUrl}`,
             originalQuery: req.query,
         })
@@ -57,9 +57,7 @@ router.get('/', async (req: Request, res: Response) => {
 // Get a single book by ID
 router.get('/:id', async (req: Request, res: Response) => {
     try {
-        const book = await Book.findById(req.params.id).populate(
-            'category department'
-        )
+        const book = await Book.findById(req.params.id).populate('department')
         if (!book) {
             res.status(404).json({ message: 'Book not found' })
             return
