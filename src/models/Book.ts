@@ -4,7 +4,7 @@ export interface IBook extends Document {
     title: string
     author: string
     genre: string
-    image: string
+    image_url: string
     description: string
     book_link: string
     department: mongoose.Types.ObjectId
@@ -15,7 +15,7 @@ const bookSchema = new Schema<IBook>({
     title: { type: String, required: true },
     author: { type: String, required: true },
     genre: { type: String },
-    image: { type: String },
+    image_url: { type: String },
     description: { type: String },
     book_link: { type: String},
     department: {

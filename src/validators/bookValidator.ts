@@ -13,7 +13,7 @@ export const bookSchema = Joi.object({
         'string.empty': 'Genre is required',
         'string.min': 'Genre must be at least 3 characters long',
     }),
-    image: Joi.string().required().messages({
+    image_url: Joi.string().required().messages({
         'string.empty': 'Image is required',
     }),
     description: Joi.string().min(10).required().messages({

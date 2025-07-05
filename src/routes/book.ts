@@ -5,8 +5,6 @@ import Department from '../models/Department'
 import { paginate } from '../utils/paginate'
 import { bookSchema } from '../validators/bookValidator'
 import validate from '../middleware/validate'
-import { saveBase64Image } from '../utils/saveBase64Image'
-import { buildAbsoluteUrl } from '../utils/buildAbsoluteUrl'
 
 const router = express.Router()
 
@@ -83,7 +81,7 @@ router.post(
                 description,
                 book_link,
                 department,
-                image,
+                image_url,
             } = req.body
 
             const existingBook = await Book.findOne({
@@ -94,20 +92,11 @@ router.post(
                 return
             }
 
-            // Handle base64 image
-            let imageUrl = null
-            if (image && image.startsWith('data:')) {
-                const relativePath = saveBase64Image(image, 'book', 'bookImage')
-                imageUrl = buildAbsoluteUrl(req, relativePath)
-            } else if (image) {
-                imageUrl = image
-            }
-
             const book = new Book({
                 title,
                 author,
                 genre,
-                image: imageUrl,
+                image_url,
                 description,
                 book_link,
                 department,
@@ -138,12 +127,6 @@ router.patch(
                     res.status(409).json({ title: 'Book title already exists' })
                     return
                 }
-            }
-
-            // Handle base64 image if updated
-            if (image && image.startsWith('data:')) {
-                const relativePath = saveBase64Image(image, 'book', 'bookImage')
-                req.body.image = buildAbsoluteUrl(req, relativePath)
             }
 
             const book = await Book.findByIdAndUpdate(req.params.id, req.body, {
