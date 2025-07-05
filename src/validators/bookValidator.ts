@@ -23,9 +23,6 @@ export const bookSchema = Joi.object({
     book_link: Joi.string().required().messages({
         'string.empty': 'Book link is required',
     }),
-    category: Joi.string().required().messages({
-        'string.empty': 'Category is required',
-    }),
     department: Joi.string().required().messages({
         'string.empty': 'Department is required',
     }),

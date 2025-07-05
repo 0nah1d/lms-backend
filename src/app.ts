@@ -8,7 +8,6 @@ import connectDB from './config/db'
 
 import authRoute from './routes/auth'
 import bookRoute from './routes/book'
-import categoryRoute from './routes/categories'
 import departmentRoute from './routes/departments'
 import homeRoute from './routes/home'
 import issueRoute from './routes/issues'
@@ -41,7 +40,6 @@ async function startServer() {
 
         app.use('/', homeRoute)
         app.use('/auth', authRoute)
-        app.use('/category', categoryRoute)
         app.use('/department', departmentRoute)
         app.use('/book', bookRoute)
         app.use('/issue', issueRoute)

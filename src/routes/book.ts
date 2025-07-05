@@ -83,7 +83,6 @@ router.post(
                 genre,
                 description,
                 book_link,
-                category,
                 department,
                 image,
             } = req.body
@@ -112,7 +111,6 @@ router.post(
                 image: imageUrl,
                 description,
                 book_link,
-                category,
                 department,
             })
 
