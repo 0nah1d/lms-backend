@@ -13,6 +13,7 @@ import categoryRoute from './routes/categories'
 import departmentRoute from './routes/departments'
 import homeRoute from './routes/home'
 import issueRoute from './routes/issues'
+import path from 'path'
 
 dotenv.config()
 
@@ -38,6 +39,7 @@ async function startServer() {
 
         // Swagger UI
         app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+        app.use('/uploads', express.static(path.join(__dirname, '../uploads')))
 
         app.use('/', homeRoute)
         app.use('/auth', authRoute)

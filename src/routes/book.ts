@@ -1,10 +1,10 @@
 import express, { Request, Response } from 'express'
 import auth from '../middleware/auth'
-import validate from '../middleware/validate'
-import Book, { IBook } from '../models/Book'
+import Book from '../models/Book'
 import Department from '../models/Department'
 import { paginate } from '../utils/paginate'
 import { bookSchema } from '../validators/bookValidator'
+import validate from '../middleware/validate'
 
 const router = express.Router()
 
@@ -35,6 +35,7 @@ router.get('/', async (req: Request, res: Response) => {
                 return
             }
         }
+
         const result = await paginate({
             model: Book,
             query,
@@ -57,12 +58,10 @@ router.get('/:id', async (req: Request, res: Response) => {
         const book = await Book.findById(req.params.id).populate(
             'category department'
         )
-
         if (!book) {
             res.status(404).json({ message: 'Book not found' })
             return
         }
-
         res.json(book)
     } catch (error: any) {
         res.status(500).json({ message: error.message })
@@ -74,16 +73,38 @@ router.post(
     '/',
     auth(['admin']),
     validate(bookSchema),
-    async (req: Request<{}, {}, Partial<IBook>>, res: Response) => {
+    async (req: Request, res: Response) => {
         try {
+            const {
+                title,
+                author,
+                genre,
+                description,
+                book_link,
+                category,
+                department,
+                image,
+            } = req.body
+
             const existingBook = await Book.findOne({
-                title: { $regex: new RegExp(`^${req.body.title}$`, 'i') },
+                title: { $regex: new RegExp(`^${title}$`, 'i') },
             })
             if (existingBook) {
-                res.status(409).json({ message: 'Book title already exists' })
+                res.status(409).json({ title: 'Book title already exists' })
                 return
             }
-            const book = new Book(req.body)
+
+            const book = new Book({
+                title,
+                author,
+                genre,
+                image,
+                description,
+                book_link,
+                category,
+                department,
+            })
+
             await book.save()
             res.status(201).json({ message: 'Book created successfully', book })
         } catch (error: any) {
@@ -96,8 +117,7 @@ router.post(
 router.put(
     '/:id',
     auth(['admin']),
-    validate(bookSchema),
-    async (req: Request<{ id: string }, {}, Partial<IBook>>, res: Response) => {
+    async (req: Request<{ id: string }>, res: Response) => {
         try {
             const { title } = req.body
 
@@ -108,7 +128,7 @@ router.put(
                 })
                 if (existingBook) {
                     res.status(409).json({
-                        message: 'Book title already exists',
+                        title: 'Book title already exists',
                     })
                     return
                 }
