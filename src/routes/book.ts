@@ -121,7 +121,7 @@ router.post(
 )
 
 // Update a book
-router.put(
+router.patch(
     '/:id',
     auth(['admin']),
     async (req: Request<{ id: string }>, res: Response) => {

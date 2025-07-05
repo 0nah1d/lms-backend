@@ -26,4 +26,8 @@ export const bookSchema = Joi.object({
     department: Joi.string().required().messages({
         'string.empty': 'Department is required',
     }),
+    stock: Joi.number().required().messages({
+        'number.base': 'Stock must be a number',
+        'any.required': 'Stock is required',
+    })
 })
