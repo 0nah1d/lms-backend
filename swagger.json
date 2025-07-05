@@ -59,9 +59,34 @@
     "/": {
       "get": {
         "description": "",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "type": "string"
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"
@@ -77,7 +102,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "bookId": {
+                "book": {
                   "example": "any"
                 }
               }
@@ -91,6 +116,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "409": {
+            "description": "Conflict"
+          },
           "default": {
             "description": ""
           }
@@ -98,6 +126,31 @@
       }
     },
     "/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "default": {
+            "description": ""
+          }
+        }
+      },
       "put": {
         "description": "",
         "parameters": [

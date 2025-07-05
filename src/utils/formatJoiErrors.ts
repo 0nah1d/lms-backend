@@ -11,12 +11,7 @@ const formatJoiErrors = (
 
     return error.details.reduce<FormattedErrors>((acc, curr) => {
         const field = String(curr.path[0])
-        let message = curr.message.replace(/['"]/g, '')
-
-        if (message.toLowerCase().startsWith(field.toLowerCase())) {
-            message = message.slice(field.length).trim()
-        }
-
+        const message = curr.message.replace(/['"]/g, '')
         acc[field] = message.charAt(0).toUpperCase() + message.slice(1)
         return acc
     }, {})

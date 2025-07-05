@@ -2,6 +2,7 @@ import mongoose, { Document, Model, Schema } from 'mongoose'
 import bcrypt from 'bcryptjs'
 
 export interface IUser extends Document {
+    name: string
     username: string
     email: string
     password: string
@@ -27,6 +28,7 @@ const userSchema = new Schema<IUser>({
         default: 'student',
         required: true,
     },
+    name: { type: String, required: true },
     department: { type: Schema.Types.ObjectId, ref: 'Department' },
     batch: { type: String },
     phone: { type: String },

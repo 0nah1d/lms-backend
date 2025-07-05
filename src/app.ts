@@ -1,11 +1,18 @@
-import dotenv from 'dotenv'
-import cors from 'cors'
-import express, { Application } from 'express'
-import swaggerUi from 'swagger-ui-express'
 import chalk from 'chalk'
+import cors from 'cors'
+import dotenv from 'dotenv'
+import express, { Application } from 'express'
 import morgan from 'morgan'
+import swaggerUi from 'swagger-ui-express'
 import connectDB from './config/db'
 import { generateSwaggerDocsOnce } from './config/swagger'
+
+import authRoute from './routes/auth'
+import bookRoute from './routes/book'
+import categoryRoute from './routes/categories'
+import departmentRoute from './routes/departments'
+import homeRoute from './routes/home'
+import issueRoute from './routes/issues'
 
 dotenv.config()
 
@@ -18,7 +25,6 @@ app.use(
     })
 )
 
-// Connect to MongoDB
 connectDB().then()
 
 // Middleware
@@ -28,20 +34,18 @@ app.use(morgan('dev'))
 async function startServer() {
     try {
         await generateSwaggerDocsOnce()
-        const swaggerDocument = require('../swagger.json')
+        const swaggerDocument = require('../swagger.json') // this is fine for now
 
         // Swagger UI
         app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
-        // Routes
-        app.use('/', require('./routes/home').default)
-        app.use('/auth', require('./routes/auth').default)
-        app.use('/categories', require('./routes/categories').default)
-        app.use('/departments', require('./routes/departments').default)
-        app.use('/books', require('./routes/book').default)
-        app.use('/issues', require('./routes/issues').default)
+        app.use('/', homeRoute)
+        app.use('/auth', authRoute)
+        app.use('/category', categoryRoute)
+        app.use('/department', departmentRoute)
+        app.use('/book', bookRoute)
+        app.use('/issue', issueRoute)
 
-        // Start server
         const PORT: number = Number(process.env.PORT) || 5000
         app.listen(PORT, () =>
             console.log(
