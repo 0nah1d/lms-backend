@@ -9,7 +9,7 @@ const router = express.Router()
 // Get all departments
 router.get('/', async (req: Request, res: Response) => {
     try {
-        const departments = await Department.find()
+        const departments = await Department.find().sort({ _id: -1 })
         res.json(departments)
     } catch (error: any) {
         res.status(500).json({ message: error.message })
@@ -29,7 +29,7 @@ router.post(
             })
             if (existingDepartment) {
                 res.status(409).json({
-                    message: 'Department name already exists',
+                    name: 'Department name already exists',
                 })
                 return
             }
@@ -44,7 +44,7 @@ router.post(
 )
 
 // Update a department
-router.put(
+router.patch(
     '/:id',
     auth(['admin']),
     validate(departmentSchema),
@@ -62,7 +62,7 @@ router.put(
                 })
                 if (existingDepartment) {
                     res.status(409).json({
-                        message: 'Department name already exists',
+                        name: 'Department name already exists',
                     })
                     return
                 }

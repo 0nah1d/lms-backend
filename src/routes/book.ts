@@ -41,6 +41,7 @@ router.get('/', async (req: Request, res: Response) => {
         const result = await paginate({
             model: Book,
             query,
+            sort: { _id: -1 },
             page: currentPage,
             limit: perPage,
             populate: ['department'],
