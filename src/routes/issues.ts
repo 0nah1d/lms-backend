@@ -4,8 +4,14 @@ import validate from '../middleware/validate'
 import Book from '../models/Book'
 import Issue from '../models/Issue'
 import issueSchema from '../validators/issueValidator'
+import { JwtPayload } from 'jsonwebtoken'
+import { paginate } from '../utils/paginate'
 
 const router = express.Router()
+
+interface AuthRequest extends Request {
+    user?: JwtPayload | string
+}
 
 // Get all book issues with filter, search, and pagination
 router.get('/', auth(['admin']), async (req: Request, res: Response) => {
@@ -14,102 +20,114 @@ router.get('/', auth(['admin']), async (req: Request, res: Response) => {
 
         const currentPage = parseInt(page as string, 10)
         const perPage = parseInt(limit as string, 10)
-        const skip = (currentPage - 1) * perPage
 
         const query: any = {}
         if (status) query.status = status
 
-        const issues = await Issue.find(query)
-            .populate({
-                path: 'book',
-                match: search
-                    ? { title: { $regex: search as string, $options: 'i' } }
-                    : {},
-            })
-            .populate({
-                path: 'user',
-                match: search
-                    ? {
-                          $or: [
-                              {
-                                  name: {
-                                      $regex: search as string,
-                                      $options: 'i',
-                                  },
-                              },
-                              {
-                                  username: {
-                                      $regex: search as string,
-                                      $options: 'i',
-                                  },
-                              },
-                          ],
-                      }
-                    : {},
-            })
-            .skip(skip)
-            .limit(perPage)
+        const paginated = await paginate({
+            model: Issue,
+            query,
+            page: currentPage,
+            limit: perPage,
+            populate: ['book', 'user'],
+            baseUrl: '/issues',
+            originalQuery: req.query as Record<string, any>,
+        })
 
-        const filteredIssues = issues.filter(
-            (issue) => issue.book && issue.user
+        const filteredResults = paginated.results.filter(
+            (issue: any) => issue.book && issue.user
         )
-        const total = await Issue.countDocuments(query)
+
+        const searchLower = ((search as string) || '').toLowerCase()
+        const searchedResults = search
+            ? filteredResults.filter(
+                  (issue: any) =>
+                      (issue.book.title &&
+                          issue.book.title
+                              .toLowerCase()
+                              .includes(searchLower)) ||
+                      (issue.user.name &&
+                          issue.user.name
+                              .toLowerCase()
+                              .includes(searchLower)) ||
+                      (issue.user.username &&
+                          issue.user.username
+                              .toLowerCase()
+                              .includes(searchLower))
+              )
+            : filteredResults
+
+        const statusOrder: Record<string, number> = {
+            pending: 0,
+            approved: 1,
+            returned: 2,
+        }
+        const sortedResults = searchedResults.sort(
+            (a: any, b: any) => statusOrder[a.status] - statusOrder[b.status]
+        )
 
         res.json({
-            count: filteredIssues.length,
-            page: currentPage,
-            page_size: perPage,
-            total_page: Math.ceil(total / perPage),
-            results: filteredIssues,
+            ...paginated,
+            count: sortedResults.length,
+            results: sortedResults,
         })
     } catch (error: any) {
         res.status(500).json({ message: error.message })
     }
 })
 
-// Get single issue by ID
 router.get(
-    '/:id',
-    auth(['admin', 'student']),
-    async (req: Request<{ id: string }>, res: Response) => {
+    '/book/:bookId/check',
+    auth(['student']),
+    async (req: AuthRequest, res: Response) => {
+        const { bookId } = req.params
+
         try {
-            const issue = await Issue.findById(req.params.id).populate(
-                'book user'
-            )
-            if (!issue) {
-                res.status(404).json({ message: 'Issue not found' })
-                return
+            const userId = (req.user as JwtPayload).id
+
+            const existingIssue = await Issue.findOne({
+                book: bookId,
+                user: userId,
+                status: { $in: ['pending', 'approved'] },
+            })
+
+            if (existingIssue) {
+                res.json({ alreadyIssued: true, status: existingIssue.status })
+            } else {
+                res.json({ alreadyIssued: false })
             }
-            res.json(issue)
         } catch (error: any) {
             res.status(500).json({ message: error.message })
         }
     }
 )
 
-// Request a book issue
+// issue book
 router.post(
     '/',
     auth(['student']),
     validate(issueSchema),
     async (req: any, res: Response) => {
         try {
-            const { book: bookId } = req.body
+            const { book: bookId, return_date, quantity = 1 } = req.body
+
             const book = await Book.findById(bookId)
-            if (!book || book.stock <= 0) {
-                res.status(400).json({ message: 'Book not available' })
+            if (!book || book.stock < quantity) {
+                res.status(400).json({ message: 'Not enough stock available' })
                 return
             }
 
             const issue = new Issue({
                 book: bookId,
                 user: req.user.id,
+                quantity,
                 status: 'pending',
                 issue_date: new Date(),
+                return_date: return_date,
             })
 
             await issue.save()
-            await Book.findByIdAndUpdate(bookId, { $inc: { stock: -1 } })
+            await Book.findByIdAndUpdate(bookId, { $inc: { stock: -quantity } })
 
             res.status(201).json({
                 message: 'Book issue requested successfully',
@@ -120,46 +138,39 @@ router.post(
     }
 )
 
-// Approve a book issue
-router.put(
-    '/:id/approve',
+// change status
+router.patch(
+    '/:id/status',
     auth(['admin']),
-    async (req: Request<{ id: string }>, res: Response) => {
+    async (
+        req: Request<{ id: string }, {}, { status: string }>,
+        res: Response
+    ) => {
         try {
-            const issue = await Issue.findByIdAndUpdate(
-                req.params.id,
-                { status: 'approved', issue_date: new Date() },
-                { new: true }
-            )
-            if (!issue) {
-                res.status(404).json({ message: 'Issue not found' })
+            const { status } = req.body
+            if (!['pending', 'approved', 'returned'].includes(status)) {
+                res.status(400).json({ message: 'Invalid status' })
                 return
             }
-            res.json({ message: 'Book issue approved successfully' })
-        } catch (error: any) {
-            res.status(400).json({ message: error.message })
-        }
-    }
-)
 
-// Return a book
-router.put(
-    '/:id/return',
-    auth(['admin']),
-    async (req: Request<{ id: string }>, res: Response) => {
-        try {
-            const issue = await Issue.findByIdAndUpdate(
-                req.params.id,
-                { status: 'returned', return_date: new Date() },
-                { new: true }
-            )
+            const issue = await Issue.findById(req.params.id)
             if (!issue) {
                 res.status(404).json({ message: 'Issue not found' })
                 return
             }
 
-            await Book.findByIdAndUpdate(issue.book, { $inc: { stock: 1 } })
-            res.json({ message: 'Book returned successfully' })
+            const previousStatus = issue.status
+
+            issue.status = status as 'pending' | 'approved' | 'returned'
+            issue.return_date = status === 'returned' ? new Date() : undefined
+            await issue.save()
+
+            // Update book stock only if status is changed to 'returned' from another status
+            if (status === 'returned' && previousStatus !== 'returned') {
+                await Book.findByIdAndUpdate(issue.book, { $inc: { stock: 1 } })
+            }
+
+            res.json({ message: `Status updated to ${status}` })
         } catch (error: any) {
             res.status(400).json({ message: error.message })
         }

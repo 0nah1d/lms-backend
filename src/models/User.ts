@@ -28,7 +28,7 @@ const userSchema = new Schema<IUser>({
         default: 'student',
         required: true,
     },
-    name: { type: String, required: true },
+    name: { type: String },
     department: { type: Schema.Types.ObjectId, ref: 'Department' },
     batch: { type: String },
     phone: { type: String },

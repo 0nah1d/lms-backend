@@ -6,6 +6,7 @@ export interface IIssue extends Document {
     issue_date: Date
     return_date?: Date
     status: 'pending' | 'approved' | 'returned'
+    quantity: number
 }
 
 const issueSchema = new Schema<IIssue>({
@@ -19,6 +20,7 @@ const issueSchema = new Schema<IIssue>({
         default: 'pending',
         required: true,
     },
+    quantity: { type: Number, required: true, min: 1 },
 })
 
 const Issue: Model<IIssue> = mongoose.model<IIssue>('Issue', issueSchema)
