@@ -1,0 +1,1202 @@
+[
+    {
+        "name": "Introduction to Algorithms",
+        "author": "Thomas H. Cormen",
+        "genre": "Algorithms",
+        "image": "https://i.ibb.co.com/20thh9BG/108986.jpg",
+        "quantity": 5,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "This book offers a comprehensive exploration of modern algorithm design and analysis. It walks readers through various categories including divide-and-conquer, dynamic programming, greedy algorithms, and graph algorithms. The topics are supported with detailed pseudocode and real-world examples to help students and professionals understand performance and implementation trade-offs."
+    },
+    {
+        "name": "Computer Networking: A Top-Down Approach",
+        "author": "Kurose & Ross",
+        "genre": "Networking",
+        "image": "https://i.ibb.co.com/84X78R3N/81ew-Un-ANZPL-AC-UF1000-1000-QL80.jpg",
+        "quantity": 3,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focusing on a top-down approach, this book introduces the core concepts of computer networking starting from the application layer. It discusses HTTP, FTP, DNS, and email protocols before progressing to the transport, network, and link layers. Updated topics such as network security, congestion control, and mobile networks are also included."
+    },
+    {
+        "name": "Operating System Concepts",
+        "author": "Abraham Silberschatz",
+        "genre": "Operating Systems",
+        "image": "https://i.ibb.co.com/ZRLzvCBs/1118093755.jpg",
+        "quantity": 6,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "A foundational text for OS courses, this book explores process synchronization, CPU scheduling, memory management, file systems, and security. The content is supplemented with case studies from UNIX and Windows to give a practical perspective. Students gain hands-on insights into OS concepts used in modern computer systems and devices."
+    },
+    {
+        "name": "Database System Concepts",
+        "author": "Abraham Silberschatz",
+        "genre": "Database",
+        "image": "https://i.ibb.co.com/d4PJbyM7/book-63402022-12-05-1670220947.jpg",
+        "quantity": 4,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covering relational database models, this book discusses SQL queries, ER diagrams, normalization techniques, and transaction management. It also delves into NoSQL technologies like MongoDB. With numerous examples and exercises, it’s a great resource for understanding both theory and application of database management systems."
+    },
+    {
+        "name": "Artificial Intelligence: A Modern Approach",
+        "author": "Stuart Russell & Peter Norvig",
+        "genre": "AI",
+        "image": "https://i.ibb.co.com/F43ZVhSx/9788129700414.jpg",
+        "quantity": 2,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "A rich resource for understanding artificial intelligence, this book includes key concepts in intelligent agents, search algorithms, machine learning, knowledge representation, planning, and robotics. It emphasizes practical use-cases and ethical considerations of AI technologies, making it suitable for both beginners and advanced learners."
+    },
+    {
+        "name": "The C Programming Language",
+        "author": "Brian W. Kernighan & Dennis M. Ritchie",
+        "genre": "Programming",
+        "image": "https://i.ibb.co.com/Zz10q4m6/cprogramminglang0000kern-2ed-0001.jpg",
+        "quantity": 7,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "This classic book teaches the C language from the ground up. Topics include syntax, pointers, arrays, strings, memory management, and data structures. Exercises at the end of each chapter help reinforce the content, and the book remains a crucial guide for systems programmers and computer science students."
+    },
+    {
+        "name": "Software Engineering",
+        "author": "Ian Sommerville",
+        "genre": "Software Engineering",
+        "image": "https://i.ibb.co.com/Ng7Wsf5S/Software-Engineering-Ian-Sommerville-be564-72042.jpg",
+        "quantity": 5,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "This book examines the complete software development lifecycle, including requirements gathering, system modeling, design, coding, testing, and maintenance. Agile and plan-driven development approaches are compared. Case studies and real-world examples help illustrate the importance of software quality, teamwork, and professional practice."
+    },
+    {
+        "name": "Computer Organization and Design",
+        "author": "David A. Patterson & John L. Hennessy",
+        "genre": "Computer Architecture",
+        "image": "https://i.ibb.co.com/MxnpVcvL/24a616f9d16c6ae25c23c458c86464bf.jpg",
+        "quantity": 3,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "The book introduces readers to the basics of hardware design and instruction set architectures. It covers assembly language, pipelining, memory hierarchy, I/O systems, and performance evaluation. It emphasizes modern processors like MIPS and ARM and their real-world applications in embedded systems and computing devices."
+    },
+    {
+        "name": "Cryptography and Network Security",
+        "author": "William Stallings",
+        "genre": "Security",
+        "image": "https://i.ibb.co.com/bMKg36p5/slide-1.jpg",
+        "quantity": 2,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Detailed coverage of both symmetric and asymmetric encryption, digital signatures, authentication protocols, and web security. Case studies and real-world attacks are presented, helping readers understand the importance of secure communication and data protection in modern computing."
+    },
+    {
+        "name": "Computer Graphics: Principles and Practice",
+        "author": "John F. Hughes",
+        "genre": "Graphics",
+        "image": "https://i.ibb.co.com/FkfJXhCN/md-9789353068967-180820231838767.jpg",
+        "quantity": 3,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "This text provides a deep dive into the mathematics and techniques behind computer graphics. It covers rasterization, transformations, lighting, shading, and 3D rendering techniques. Examples using OpenGL and case studies help students understand how modern visualizations and games are created."
+    },
+    {
+        "name": "Machine Learning Yearning",
+        "author": "Andrew Ng",
+        "genre": "Machine Learning",
+        "image": "https://i.ibb.co/7NQDrX6b/Machine-Learning-Yearning.jpg",
+        "quantity": 6,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Provides a practical guide to understanding machine learning strategy, project workflow, and real-world applications from a business angle. It focuses on how to structure machine learning projects for maximum impact and efficiency."
+    },
+    {
+        "name": "Deep Learning",
+        "author": "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
+        "genre": "AI",
+        "image": "https://i.ibb.co/6cBrm1zp/Deep-Learning.jpg",
+        "quantity": 4,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "In-depth exploration of deep learning fundamentals including neural networks, convolutional networks, recurrent neural networks, and optimization techniques. It provides both theoretical foundations and practical approaches."
+    },
+    {
+        "name": "Clean Code",
+        "author": "Robert C. Martin",
+        "genre": "Programming",
+        "image": "https://i.ibb.co/tMNyVg7Z/Clean-Code.jpg",
+        "quantity": 2,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on writing readable, maintainable code with best practices in naming, functions, testing, and architecture. It teaches how to refactor bad code and maintain software quality over time."
+    },
+    {
+        "name": "Design Patterns",
+        "author": "Erich Gamma et al.",
+        "genre": "Software Design",
+        "image": "https://i.ibb.co/HT1HBvwZ/Design-Patterns.jpg",
+        "quantity": 3,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Classic book introducing 23 software design patterns used in object-oriented software development to promote reusability and scalability. Covers patterns such as Singleton, Observer, Factory, and Decorator."
+    },
+    {
+        "name": "Introduction to the Theory of Computation",
+        "author": "Michael Sipser",
+        "genre": "Theory",
+        "image": "https://i.ibb.co/rGCB7Cmg/Introduction-to-the-Theory-of-Computation.jpg",
+        "quantity": 4,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "A detailed explanation of automata theory, formal languages, Turing machines, computability, and complexity classes. It bridges theory with practical computational problems."
+    },
+    {
+        "name": "Data Structures and Algorithms Made Easy",
+        "author": "Narasimha Karumanchi",
+        "genre": "Data Structures",
+        "image": "https://i.ibb.co/5WLjVb26/Data-Structures-and-Algorithms-Made-Easy.jpg",
+        "quantity": 5,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers data structures such as arrays, stacks, queues, linked lists, trees, graphs, and heaps. Also includes algorithmic concepts and interview problems."
+    },
+    {
+        "name": "You Don’t Know JS Yet",
+        "author": "Kyle Simpson",
+        "genre": "Web Development",
+        "image": "https://i.ibb.co/WWgKCnkr/You-Don-t-Know-JS-Yet.jpg",
+        "quantity": 3,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Modern JavaScript series that deeply explains scope, closures, asynchronous programming, ES6+ features, and JavaScript internals for developers."
+    },
+    {
+        "name": "Structure and Interpretation of Computer Programs",
+        "author": "Harold Abelson & Gerald Jay Sussman",
+        "genre": "Programming Paradigms",
+        "image": "https://i.ibb.co/NkVGgpq/Structure-and-Interpretation-of-Computer-Programs.jpg",
+        "quantity": 2,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Classic MIT text on programming foundations, recursion, abstraction, interpreters, and functional programming with Scheme. Focuses on the conceptual side of programming."
+    },
+    {
+        "name": "Linux Command Line and Shell Scripting Bible",
+        "author": "Richard Blum",
+        "genre": "Operating Systems",
+        "image": "https://i.ibb.co/nhr471T/Linux-Command-Line-and-Shell-Scripting-Bible.jpg",
+        "quantity": 5,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Complete guide to shell scripting and Linux command line for automating system tasks, file manipulation, and bash programming for sysadmins and developers."
+    },
+    {
+        "name": "The Pragmatic Programmer",
+        "author": "Andrew Hunt & David Thomas",
+        "genre": "Software Development",
+        "image": "https://i.ibb.co/6cW1SmFD/The-Pragmatic-Programmer.jpg",
+        "quantity": 4,
+        "category": "CSE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers practical advice for developers including coding techniques, workflow tips, version control, debugging, and career development for software professionals."
+    },
+    {
+        "name": "Principles of Marketing",
+        "author": "Philip Kotler",
+        "genre": "Marketing",
+        "image": "https://i.ibb.co/JjvTPpps/Principles-of-Marketing.jpg",
+        "quantity": 7,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "This book introduces fundamental marketing principles including market research, consumer behavior, segmentation, targeting, positioning, branding, and digital marketing strategies. It blends theory with practical examples from global companies to help students grasp modern marketing challenges."
+    },
+    {
+        "name": "Financial Management: Theory and Practice",
+        "author": "Eugene F. Brigham",
+        "genre": "Finance",
+        "image": "https://i.ibb.co/KjxxzKC8/Financial-Management-Theory-and-Practice.jpg",
+        "quantity": 5,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers key financial management topics including capital budgeting, risk and return, cost of capital, financial analysis, and working capital management. The book uses real-life financial cases to illustrate concepts applicable in business decision-making."
+    },
+    {
+        "name": "Organizational Behavior",
+        "author": "Stephen P. Robbins",
+        "genre": "Management",
+        "image": "https://i.ibb.co/Xrqj0FC3/Organizational-Behavior.jpg",
+        "quantity": 6,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores individual and group behavior within organizations, covering motivation theories, leadership styles, communication, organizational culture, and change management, preparing students to improve workplace effectiveness."
+    },
+    {
+        "name": "Human Resource Management",
+        "author": "Gary Dessler",
+        "genre": "HR",
+        "image": "https://i.ibb.co/1tWLxNHf/Human-Resource-Management.jpg",
+        "quantity": 4,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Comprehensive guide to HRM functions such as recruitment, selection, training, performance management, compensation, and labor relations. It blends theory with HR practices critical for managing workforce challenges."
+    },
+    {
+        "name": "Business Ethics: Ethical Decision Making",
+        "author": "O. C. Ferrell",
+        "genre": "Ethics",
+        "image": "https://i.ibb.co/nq2C5QxV/Business-Ethics.jpg",
+        "quantity": 3,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on ethical frameworks, corporate social responsibility, and ethical dilemmas faced by managers and businesses. It integrates case studies to encourage critical thinking about ethical decision-making."
+    },
+    {
+        "name": "Financial Accounting",
+        "author": "Robert Libby",
+        "genre": "Accounting",
+        "image": "https://i.ibb.co/nNYYs7JW/Financial-Accounting.png",
+        "quantity": 8,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "An introductory text on financial accounting principles covering journal entries, ledgers, trial balance, financial statements, and the accounting cycle. It uses practical examples to help students master accounting basics."
+    },
+    {
+        "name": "International Business",
+        "author": "Charles W.L. Hill",
+        "genre": "Business",
+        "image": "https://i.ibb.co/ycDt0J3r/International-Business.jpg",
+        "quantity": 5,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Discusses globalization, international trade theories, foreign exchange markets, trade policies, and cultural challenges of international business operations. Includes case studies of multinational corporations."
+    },
+    {
+        "name": "Operations Management",
+        "author": "Jay Heizer",
+        "genre": "Operations",
+        "image": "https://i.ibb.co/6cyZ7GMV/Operations-Management.png",
+        "quantity": 6,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers production and operations management concepts including process analysis, quality management, supply chain, inventory control, and lean production principles."
+    },
+    {
+        "name": "Entrepreneurship: Starting and Operating a Small Business",
+        "author": "Steve Mariotti",
+        "genre": "Entrepreneurship",
+        "image": "https://i.ibb.co/JRvwX9JC/Entrepreneurship.jpg",
+        "quantity": 3,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Guides students through business plan development, financing, marketing, and managing a small business. It emphasizes practical advice for budding entrepreneurs."
+    },
+    {
+        "name": "Principles of Management",
+        "author": "Harold Koontz",
+        "genre": "Management",
+        "image": "https://i.ibb.co/ccYdcWJz/Principles-of-Management.jpg",
+        "quantity": 7,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Introduces core management functions such as planning, organizing, leading, and controlling, with examples to help students understand managerial roles and responsibilities."
+    },
+    {
+        "name": "Marketing Management",
+        "author": "Philip Kotler",
+        "genre": "Marketing",
+        "image": "https://i.ibb.co/PGh69mw9/Marketing-Management.jpg",
+        "quantity": 5,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "A detailed guide to marketing strategy, market segmentation, product development, pricing, promotion, and distribution management."
+    },
+    {
+        "name": "Business Communication",
+        "author": "Courtland L. Bovee",
+        "genre": "Communication",
+        "image": "https://i.ibb.co/JjRtjrgv/Business-Communication.jpg",
+        "quantity": 4,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers effective communication strategies in business, including writing reports, presentations, interpersonal communication, and digital communication tools."
+    },
+    {
+        "name": "Strategic Management",
+        "author": "Fred R. David",
+        "genre": "Strategy",
+        "image": "https://i.ibb.co/RGvQ34Bb/Strategic-Management.jpg",
+        "quantity": 3,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Introduces strategic analysis, formulation, implementation, and control processes that help organizations achieve competitive advantage."
+    },
+    {
+        "name": "Managerial Economics",
+        "author": "William F. Samuelson",
+        "genre": "Economics",
+        "image": "https://i.ibb.co/JwJ9kNMd/Managerial-Economics.jpg",
+        "quantity": 6,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Combines microeconomic theory with managerial decision making, covering demand analysis, production, cost, pricing, and market structure."
+    },
+    {
+        "name": "Financial Markets and Institutions",
+        "author": "Frederic S. Mishkin",
+        "genre": "Finance",
+        "image": "https://i.ibb.co/7D3vnzR/Financial-Markets-and-Institutions.png",
+        "quantity": 4,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Examines the role of financial markets, instruments, and institutions in the economy, discussing topics such as interest rates, banking, and investment."
+    },
+    {
+        "name": "International Marketing",
+        "author": "Philip Cateora",
+        "genre": "Marketing",
+        "image": "https://i.ibb.co/yFycxRyB/International-Marketing.jpg",
+        "quantity": 5,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on marketing principles applied to international markets, including cultural, political, and economic factors influencing global marketing."
+    },
+    {
+        "name": "Project Management: A Systems Approach",
+        "author": "Harold Kerzner",
+        "genre": "Project Management",
+        "image": "https://i.ibb.co/Fk6cCQwx/Project-Management.jpg",
+        "quantity": 6,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Detailed guide to project planning, execution, control, and closure. Includes risk management, scheduling techniques, and resource allocation."
+    },
+    {
+        "name": "Supply Chain Management",
+        "author": "Sunil Chopra",
+        "genre": "Operations",
+        "image": "https://i.ibb.co/G3bC5xB1/Supply-Chain-Management.jpg",
+        "quantity": 4,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores the design and management of supply chains, including logistics, demand forecasting, inventory management, and supplier relations."
+    },
+    {
+        "name": "Business Law",
+        "author": "Kenneth W. Clarkson",
+        "genre": "Law",
+        "image": "https://i.ibb.co/yDyrCLp/Business-Law.jpg",
+        "quantity": 5,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Provides an overview of legal environment affecting business operations, including contracts, torts, property law, and regulatory compliance."
+    },
+    {
+        "name": "Managerial Accounting",
+        "author": "Ray H. Garrison",
+        "genre": "Accounting",
+        "image": "https://i.ibb.co/MkHVL6LW/Managerial-Accounting.jpg",
+        "quantity": 7,
+        "category": "BBA",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on accounting techniques for managers, including cost behavior, budgeting, performance evaluation, and decision making."
+    },
+    {
+        "name": "Structural Analysis",
+        "author": "Russell C. Hibbeler",
+        "genre": "Structural Engineering",
+        "image": "https://i.ibb.co/ksnm6yPz/Structural-Analysis.jpg",
+        "quantity": 5,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "This book covers fundamental concepts of structural analysis including determination of forces, moments, and deflections in statically determinate and indeterminate structures. It includes methods like moment distribution, slope-deflection, and matrix analysis."
+    },
+    {
+        "name": "Geotechnical Engineering Principles",
+        "author": "Braja M. Das",
+        "genre": "Geotechnical Engineering",
+        "image": "https://i.ibb.co/m5Z8Wgsc/Geotechnical-Engineering-Principles.jpg",
+        "quantity": 4,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on soil properties, classification, consolidation, shear strength, slope stability, and foundation design. The book combines theory with practical engineering applications."
+    },
+    {
+        "name": "Transportation Engineering",
+        "author": "C.J. Khisty",
+        "genre": "Transportation",
+        "image": "https://i.ibb.co/gMTHtsDF/Transportation-Engineering.jpg",
+        "quantity": 3,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Introduces the design and operation of highways, traffic flow theories, pavement materials, and transportation planning to provide a comprehensive overview of transportation systems."
+    },
+    {
+        "name": "Hydraulics and Fluid Mechanics",
+        "author": "P.N. Modi",
+        "genre": "Hydraulics",
+        "image": "https://i.ibb.co/LhZZ4TqV/Hydraulics-and-Fluid-Mechanics.jpg",
+        "quantity": 6,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "This book explains fluid properties, fluid statics, dynamics, flow measurement, and pipe flow. It includes practical problems related to open channel flow and pump systems."
+    },
+    {
+        "name": "Concrete Technology",
+        "author": "A.M. Neville",
+        "genre": "Construction Materials",
+        "image": "https://i.ibb.co/B2jmJ8bK/Concrete-Technology.png",
+        "quantity": 5,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Provides an in-depth look at concrete composition, mix design, curing, testing, and durability. It covers modern admixtures and advanced concrete types like high-performance and self-compacting concrete."
+    },
+    {
+        "name": "Construction Project Management",
+        "author": "Frederick E. Gould",
+        "genre": "Project Management",
+        "image": "https://i.ibb.co/mC8Fq6Nd/Construction-Project-Management.jpg",
+        "quantity": 4,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers planning, scheduling, budgeting, and control techniques specific to construction projects. It discusses resource management, contracts, safety, and quality control."
+    },
+    {
+        "name": "Soil Mechanics",
+        "author": "Donald P. Coduto",
+        "genre": "Geotechnical Engineering",
+        "image": "https://i.ibb.co/zCnDXH6/Soil-Mechanics.jpg",
+        "quantity": 3,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "This book explores soil behavior, classification, permeability, compaction, and shear strength. It includes applications such as earth retaining structures and foundation design."
+    },
+    {
+        "name": "Water Resources Engineering",
+        "author": "Larry W. Mays",
+        "genre": "Water Resources",
+        "image": "https://i.ibb.co/20NV4S5h/Water-Resources-Engineering.jpg",
+        "quantity": 6,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on hydrology, groundwater flow, reservoir design, flood control, and irrigation systems, emphasizing the management and conservation of water resources."
+    },
+    {
+        "name": "Steel Design",
+        "author": "William T. Segui",
+        "genre": "Structural Engineering",
+        "image": "https://i.ibb.co/0RqtyPsn/Steel-Design.jpg",
+        "quantity": 5,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers design principles of steel structures including tension, compression, bending, and connections. It follows modern codes and design practices for safe and economical steel structures."
+    },
+    {
+        "name": "Environmental Engineering",
+        "author": "Howard S. Peavy",
+        "genre": "Environmental Engineering",
+        "image": "https://i.ibb.co/mVpVpnPX/Environmental-Engineering.jpg",
+        "quantity": 4,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores water and wastewater treatment, air pollution, solid waste management, and environmental regulations with case studies on sustainable practices."
+    },
+    {
+        "name": "Foundation Engineering",
+        "author": "B. M. Das",
+        "genre": "Geotechnical Engineering",
+        "image": "https://i.ibb.co/1Gsf3Qp3/Foundation-Engineering.jpg",
+        "quantity": 5,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on shallow and deep foundation design, bearing capacity, settlement analysis, and foundation failure mechanisms with practical design examples."
+    },
+    {
+        "name": "Surveying and Levelling",
+        "author": "R. Subramanian",
+        "genre": "Surveying",
+        "image": "https://i.ibb.co/qYGZrLvH/Surveying-and-Levelling.jpg",
+        "quantity": 3,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Details techniques for land surveying, levelling methods, contouring, and the use of modern instruments like total stations and GPS in civil engineering projects."
+    },
+    {
+        "name": "Concrete Structures",
+        "author": "M.L. Gambhir",
+        "genre": "Structural Engineering",
+        "image": "https://i.ibb.co/9mGj5Ktk/Concrete-Structures.jpg",
+        "quantity": 6,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "This book covers design, analysis, and construction of reinforced concrete elements including beams, slabs, columns, and foundations following current design codes."
+    },
+    {
+        "name": "Construction Materials and Methods",
+        "author": "Roy Chudley",
+        "genre": "Construction",
+        "image": "https://i.ibb.co/DDf8hqbK/Construction-Materials-and-Methods.jpg",
+        "quantity": 5,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Provides an overview of building materials, their properties, testing, and applications along with common construction methods and practices."
+    },
+    {
+        "name": "Hydrology and Water Resources Engineering",
+        "author": "K. Subramanya",
+        "genre": "Hydrology",
+        "image": "https://i.ibb.co/MDs4pZdL/Hydrology-and-Water-Resources-Engineering.jpg",
+        "quantity": 4,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers rainfall analysis, streamflow, groundwater hydrology, and design of hydraulic structures for water resources management."
+    },
+    {
+        "name": "Principles of Construction Management",
+        "author": "Donald S. Barrie",
+        "genre": "Project Management",
+        "image": "https://i.ibb.co/8DGtfLsX/Principles-of-Construction-Management.jpg",
+        "quantity": 3,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on management techniques, contracts, cost control, scheduling, and safety in construction projects."
+    },
+    {
+        "name": "Advanced Structural Analysis",
+        "author": "Devdas Menon",
+        "genre": "Structural Engineering",
+        "image": "https://i.ibb.co/Z0tLcfT/Advanced-Structural-Analysis.jpg",
+        "quantity": 5,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Deals with matrix methods, finite element analysis, and computer-aided design of complex structures."
+    },
+    {
+        "name": "Reinforced Concrete Design",
+        "author": "S. Unnikrishna Pillai",
+        "genre": "Structural Engineering",
+        "image": "https://i.ibb.co/Q2rc4qM/Reinforced-Concrete-Design.jpg",
+        "quantity": 6,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Discusses design principles and detailing of reinforced concrete members under various loads according to design codes."
+    },
+    {
+        "name": "Construction Safety Management",
+        "author": "Steve Rowlinson",
+        "genre": "Safety",
+        "image": "https://i.ibb.co/1GkhctLc/Construction-Safety-Management.jpg",
+        "quantity": 4,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Emphasizes safety standards, risk assessment, and accident prevention techniques in construction industry environments."
+    },
+    {
+        "name": "Earthquake Resistant Design",
+        "author": "Pankaj Agarwal",
+        "genre": "Structural Engineering",
+        "image": "https://i.ibb.co/mFXzjq6h/Earthquake-Resistant-Design.jpg",
+        "quantity": 5,
+        "category": "Civil",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on seismic analysis and design of structures to withstand earthquake forces using modern engineering methods and codes."
+    },
+    {
+        "name": "Electrical Engineering: Principles and Applications",
+        "author": "Allan R. Hambley",
+        "genre": "Electrical Engineering",
+        "image": "https://i.ibb.co.com/5h0KmyhT/51718q-B4-Uw-L-AC-UF350-350-QL50.jpg",
+        "quantity": 5,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "An introductory book covering circuit analysis, digital systems, power systems, and electronics."
+    },
+    {
+        "name": "Power System Analysis and Design",
+        "author": "J. Duncan Glover",
+        "genre": "Power Systems",
+        "image": "https://i.ibb.co.com/bR2x8YCJ/91d-x-i5i6-L-AC-UF1000-1000-QL80.jpg",
+        "quantity": 3,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Comprehensive coverage of power generation, transmission, distribution, and system stability."
+    },
+    {
+        "name": "Microelectronic Circuits",
+        "author": "Adel S. Sedra & Kenneth C. Smith",
+        "genre": "Electronics",
+        "image": "https://i.ibb.co.com/jsKbySg/images.jpg",
+        "quantity": 6,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "A detailed study of analog and digital electronic circuits, including transistors, amplifiers, and oscillators."
+    },
+    {
+        "name": "Digital Signal Processing",
+        "author": "John G. Proakis & Dimitris K. Manolakis",
+        "genre": "Signal Processing",
+        "image": "https://i.ibb.co.com/Ng71WVyH/md-9789332550339-061020221032211.jpg",
+        "quantity": 4,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers fundamental concepts of DSP, including filtering, Fourier analysis, and real-time processing."
+    },
+    {
+        "name": "Control Systems Engineering",
+        "author": "Norman S. Nise",
+        "genre": "Control Systems",
+        "image": "https://i.ibb.co.com/qMTybjZh/111880063-X.jpg",
+        "quantity": 2,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores control system modeling, stability analysis, and controller design techniques."
+    },
+    {
+        "name": "Electric Machinery Fundamentals",
+        "author": "Stephen J. Chapman",
+        "genre": "Electric Machines",
+        "image": "https://i.ibb.co.com/Gv1m931J/0070119503-01-LZZZZZZZ.jpg",
+        "quantity": 7,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Provides an in-depth understanding of electric machines, transformers, and motor control."
+    },
+    {
+        "name": "Electromagnetic Fields and Waves",
+        "author": "David K. Cheng",
+        "genre": "Electromagnetics",
+        "image": "https://i.ibb.co.com/fYnJvtQp/63610.jpg",
+        "quantity": 5,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Discusses the principles of electromagnetics, Maxwell's equations, and wave propagation."
+    },
+    {
+        "name": "Renewable Energy: Power for a Sustainable Future",
+        "author": "Godfrey Boyle",
+        "genre": "Renewable Energy",
+        "image": "https://i.ibb.co.com/Y463L3M1/705809.jpg",
+        "quantity": 3,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Examines solar, wind, hydro, and biomass energy systems and their applications."
+    },
+    {
+        "name": "Fundamentals of Electric Circuits",
+        "author": "Charles K. Alexander & Matthew N.O. Sadiku",
+        "genre": "Circuits",
+        "image": "https://i.ibb.co.com/8gksBtrb/510-Xr2-Czkr-L-AC-UF1000-1000-QL80.jpg",
+        "quantity": 2,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores circuit analysis techniques, including Kirchhoff's laws, Thevenin's theorem, and transient response."
+    },
+    {
+        "name": "Introduction to Wireless and Mobile Systems",
+        "author": "Dharma Prakash Agrawal & Qing-An Zeng",
+        "genre": "Wireless Communication",
+        "image": "https://i.ibb.co.com/jkWL0Wxr/71i-SP84-PGBL-AC-UF1000-1000-QL80.jpg",
+        "quantity": 3,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers wireless communication principles, including cellular networks, signal propagation, and LTE."
+    },
+    {
+        "name": "Power Electronics: Converters, Applications, and Design",
+        "author": "Ned Mohan",
+        "genre": "Power Electronics",
+        "image": "https://i.ibb.co/twgbvJJ3/Power-Electronics.jpg",
+        "quantity": 4,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on the design and operation of power converters and electronic control systems used in industrial and renewable energy applications."
+    },
+    {
+        "name": "Electric Power Distribution Handbook",
+        "author": "Turan Gönen",
+        "genre": "Power Distribution",
+        "image": "https://i.ibb.co/wZqZBPTn/Electric-Power-Distribution-Handbook.jpg",
+        "quantity": 5,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "A reference for planning and managing electric power distribution systems, with insights on reliability, load forecasting, and modern automation."
+    },
+    {
+        "name": "Communication Systems",
+        "author": "Simon Haykin",
+        "genre": "Communication",
+        "image": "https://i.ibb.co/HL55hNmD/Communication-Systems.jpg",
+        "quantity": 3,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Provides foundational knowledge in analog and digital communication systems, modulation techniques, and performance analysis."
+    },
+    {
+        "name": "Applied Electromagnetics",
+        "author": "Ulaby, Ravaioli",
+        "genre": "Electromagnetics",
+        "image": "https://i.ibb.co/VYMPWpF7/Applied-Electromagnetics.jpg",
+        "quantity": 4,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explains electromagnetics through real-world applications, with coverage of antennas, transmission lines, and waveguides."
+    },
+    {
+        "name": "Digital Electronics: Principles and Applications",
+        "author": "Roger Tokheim",
+        "genre": "Digital Electronics",
+        "image": "https://i.ibb.co/ycTq2PVZ/Digital-Electronics.jpg",
+        "quantity": 6,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explains digital systems including logic gates, combinational circuits, counters, and memory units with practical examples."
+    },
+    {
+        "name": "Electrical Installation Design Guide",
+        "author": "The IET",
+        "genre": "Electrical Design",
+        "image": "https://i.ibb.co/0jjgT3G9/Electrical-Installation-Design-Guide.jpg",
+        "quantity": 3,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers practical design principles for residential and commercial electrical installations in compliance with standards."
+    },
+    {
+        "name": "High Voltage Engineering Fundamentals",
+        "author": "E. Kuffel",
+        "genre": "High Voltage",
+        "image": "https://i.ibb.co/vx3zkqFP/High-Voltage-Engineering-Fundamentals.jpg",
+        "quantity": 4,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Discusses principles of high-voltage insulation, testing techniques, breakdown mechanisms, and system safety measures."
+    },
+    {
+        "name": "Optoelectronics and Photonics",
+        "author": "S.O. Kasap",
+        "genre": "Optoelectronics",
+        "image": "https://i.ibb.co/Q7M359wZ/Optoelectronics-and-Photonics.jpg",
+        "quantity": 3,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores light-based electronics such as lasers, photodiodes, optical fibers, and their role in modern communication."
+    },
+    {
+        "name": "Mechatronics: Electronic Control Systems in Mechanical Engineering",
+        "author": "W. Bolton",
+        "genre": "Mechatronics",
+        "image": "https://i.ibb.co/N2PbhFM3/Mechatronics.jpg",
+        "quantity": 5,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Introduces integration of mechanical, electrical, and control systems in automation and robotics."
+    },
+    {
+        "name": "Signals and Systems",
+        "author": "Alan V. Oppenheim",
+        "genre": "Signals",
+        "image": "https://i.ibb.co/svwKZCFB/Signals-and-Systems.jpg",
+        "quantity": 6,
+        "category": "EEE",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores continuous and discrete signals, system modeling, Laplace and Fourier transforms, and filtering applications."
+    },
+    {
+        "name": "Introduction to Literary Theory",
+        "author": "Jonathan Culler",
+        "genre": "Literary Theory",
+        "image": "https://i.ibb.co/DHc06Hxf/Introduction-to-Literary-Theory.jpg",
+        "quantity": 6,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "This book provides an accessible introduction to the major concepts and schools of literary theory, including structuralism, post-structuralism, feminism, and psychoanalysis, helping students develop critical reading and analytical skills."
+    },
+    {
+        "name": "Shakespeare: The Complete Works",
+        "author": "William Shakespeare",
+        "genre": "Drama",
+        "image": "https://i.ibb.co/fdGQwvnW/Shakespearean-Tragedies.jpg",
+        "quantity": 5,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "A comprehensive collection of Shakespeare’s plays and sonnets, featuring historical and romantic dramas, comedies, and tragedies. This edition includes detailed annotations and historical context to enhance understanding."
+    },
+    {
+        "name": "Modern English Grammar",
+        "author": "Raymond Murphy",
+        "genre": "Grammar",
+        "image": "https://i.ibb.co/qYrmgQtk/Modern-English-Grammar.jpg",
+        "quantity": 4,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers essential grammar rules and usage in contemporary English, including tenses, sentence structure, punctuation, and common errors, with exercises for practice."
+    },
+    {
+        "name": "The Art of Poetry",
+        "author": "Edmund Spenser",
+        "genre": "Poetry",
+        "image": "https://i.ibb.co/wNhPSFcs/The-Art-of-Poetry.jpg",
+        "quantity": 5,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores poetic forms, meter, rhyme, and imagery, with classic poems analyzed for literary devices and thematic depth, helping students appreciate the craft of poetry."
+    },
+    {
+        "name": "Becoming a Writer",
+        "author": "Dorothea Brande",
+        "genre": "Creative Writing",
+        "image": "https://i.ibb.co/BKzbRX4c/Becoming-a-Writer.jpg",
+        "quantity": 6,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Offers techniques and prompts for developing original fiction, nonfiction, and poetry, focusing on voice, character, plot, and narrative style."
+    },
+    {
+        "name": "A Critical History Of English Literature",
+        "author": "David Daiches",
+        "genre": "Literature",
+        "image": "https://i.ibb.co/pjT6jzKJ/A-Critical-History.jpg",
+        "quantity": 7,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "A survey of British literary history, covering major authors and movements from the Middle Ages through the 20th century, including analysis of cultural and historical influences."
+    },
+    {
+        "name": "American Literature: An Introduction",
+        "author": "Kenneth M. Price",
+        "genre": "Literature",
+        "image": "https://i.ibb.co/BHWQc069/American-Literature.jpg",
+        "quantity": 3,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers key figures and themes in American literature from colonial times to contemporary works, emphasizing diversity and cultural identity."
+    },
+    {
+        "name": "Linguistics: An Introduction",
+        "author": "Andrew Radford",
+        "genre": "Linguistics",
+        "image": "https://i.ibb.co/jPWBS51g/Linguistics.jpg",
+        "quantity": 6,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explains phonetics, morphology, syntax, semantics, and pragmatics, providing a foundation for understanding language structure and usage."
+    },
+    {
+        "name": "Theory of the Novel: A Historical Approach",
+        "author": "Michael McKeon",
+        "genre": "Literature",
+        "image": "https://i.ibb.co/409qyLB/Theory-of-the-Novel.jpg",
+        "quantity": 5,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Examines the development of the novel as a literary form, discussing narrative techniques, genre evolution, and key novelists."
+    },
+    {
+        "name": "Elizabethan literature",
+        "author": "Robertson, J. M.",
+        "genre": "Drama",
+        "image": "https://i.ibb.co/b5LgGbxw/Elizabethan-literature.jpg",
+        "quantity": 4,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Surveys English drama with analysis of plays, playwrights, and theatrical conventions from the Elizabethan era to the 21st century."
+    },
+    {
+        "name": "Introduction to Phonetics and Phonology",
+        "author": "John C. Wells",
+        "genre": "Linguistics",
+        "image": "https://i.ibb.co/LXkK1bDL/Introduction-to-Phonetics-and-Phonology.jpg",
+        "quantity": 3,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Provides comprehensive coverage of speech sounds, articulatory phonetics, phonological systems, and transcription techniques."
+    },
+    {
+        "name": "Critical Approaches to Literature",
+        "author": "David Daiches",
+        "genre": "Literary Criticism",
+        "image": "https://i.ibb.co/wNVK1r4j/Critical-Approaches-to-Literature.jpg",
+        "quantity": 5,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Introduces various methods of literary criticism, including formalism, structuralism, Marxism, feminism, and post-colonialism."
+    },
+    {
+        "name": "Romantic Poetry",
+        "author": "M.H. Abrams",
+        "genre": "Poetry",
+        "image": "https://i.ibb.co/60bt1RsT/Romantic-Poetry.jpg",
+        "quantity": 6,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores works of major Romantic poets like Wordsworth, Coleridge, and Shelley, focusing on themes of nature, emotion, and individualism."
+    },
+    {
+        "name": "The English Language: A Historical Introduction",
+        "author": "Charles Barber",
+        "genre": "Linguistics",
+        "image": "https://i.ibb.co/HT21ZHvk/The-English-Language.jpg",
+        "quantity": 4,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Traces the history and development of the English language from Old English through modern times, including influences from other languages."
+    },
+    {
+        "name": "Shakespearean Tragedies",
+        "author": "A.C. Bradley",
+        "genre": "Drama",
+        "image": "https://i.ibb.co/fdGQwvnW/Shakespearean-Tragedies.jpg",
+        "quantity": 5,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Analyzes Shakespeare’s major tragedies, focusing on character, themes, and dramatic techniques."
+    },
+    {
+        "name": "Creative Nonfiction Writing",
+        "author": "Lee Gutkind",
+        "genre": "Creative Writing",
+        "image": "https://i.ibb.co/vx6f9DsF/Creative-Nonfiction-Writing.jpg",
+        "quantity": 3,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Offers guidance on writing factual narratives with literary techniques, including memoir, biography, and essays."
+    },
+    {
+        "name": "Postcolonial Studies",
+        "author": "Bill Ashcroft",
+        "genre": "Literature",
+        "image": "https://i.ibb.co/bMqFjwGw/Postcolonial-Studies.jpg",
+        "quantity": 4,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Examines literature from formerly colonized countries, addressing themes of identity, resistance, and cultural hybridity."
+    },
+    {
+        "name": "English Syntax and Semantics",
+        "author": "Roderick A. Jacobs",
+        "genre": "Linguistics",
+        "image": "https://i.ibb.co/Fb6mvK73/English-Syntax-and-Semantics.jpg",
+        "quantity": 5,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Discusses sentence structure, meaning, phrase structure rules, and semantic interpretation in English grammar."
+    },
+    {
+        "name": "Victorian Literature",
+        "author": "George Levine",
+        "genre": "Literature",
+        "image": "https://i.ibb.co/C3R05h4k/Victorian-Literature.jpg",
+        "quantity": 6,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers major Victorian authors like Dickens, the Brontës, and Tennyson, exploring social, political, and cultural themes of the era."
+    },
+    {
+        "name": "The Art of the Essay",
+        "author": "Phillip Lopate",
+        "genre": "Creative Writing",
+        "image": "https://i.ibb.co/BJxz5Xy/The-Art-of-the-Essay.jpg",
+        "quantity": 4,
+        "category": "English",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "A practical guide to writing essays, covering structure, style, voice, and rhetorical techniques to enhance clarity and engagement."
+    },
+    {
+        "name": "Introduction to Legal Studies",
+        "author": "John M. Scheb",
+        "genre": "Legal Studies",
+        "image": "https://i.ibb.co/Pv11RKhw/Introduction-to-Legal-Studies.jpg",
+        "quantity": 6,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Provides a foundational overview of law, legal systems, and processes. Topics include the role of law in society, types of law, and an introduction to the legal profession."
+    },
+    {
+        "name": "Constitutional Law: Principles and Practices",
+        "author": "Erwin Chemerinsky",
+        "genre": "Constitutional Law",
+        "image": "https://i.ibb.co/m5csFyTP/Constitutional-Law.jpg",
+        "quantity": 5,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Examines constitutional principles, judicial review, federalism, separation of powers, and civil rights through case studies and legal analysis."
+    },
+    {
+        "name": "Criminal Law and Procedure",
+        "author": "Kent Roach",
+        "genre": "Criminal Law",
+        "image": "https://i.ibb.co/dwBm0jcN/Criminal-Law-and-Procedure.jpg",
+        "quantity": 4,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers fundamental principles of criminal law, including offenses, defenses, and the criminal justice process, with an emphasis on procedural safeguards."
+    },
+    {
+        "name": "Contract Law: Cases and Materials",
+        "author": "E. Allan Farnsworth",
+        "genre": "Contract Law",
+        "image": "https://i.ibb.co/d0mfx1wm/Contract-Law.jpg",
+        "quantity": 6,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Analyzes key concepts in contract law, such as offer, acceptance, consideration, breach, and remedies, supported by landmark case discussions."
+    },
+    {
+        "name": "International Law and Organizations",
+        "author": "Malcolm Shaw",
+        "genre": "International Law",
+        "image": "https://i.ibb.co/ZzSVn6VP/International-Law.jpg",
+        "quantity": 5,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores principles of international law, sovereignty, treaties, human rights, and the role of international organizations like the UN and ICC."
+    },
+    {
+        "name": "Property Law Essentials",
+        "author": "John G. Sprankling",
+        "genre": "Property Law",
+        "image": "https://i.ibb.co/FkfSMgwH/Property-Law-Essentials.jpg",
+        "quantity": 6,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Introduces property law fundamentals, including ownership, possession, transfer, and land use, with practical examples and case studies."
+    },
+    {
+        "name": "Torts: Cases and Materials",
+        "author": "Prosser, Wade & Schwartz",
+        "genre": "Torts",
+        "image": "https://i.ibb.co/JRpyz8WL/Torts.jpg",
+        "quantity": 5,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers the law of torts, including negligence, intentional torts, strict liability, and damages, supported by landmark cases."
+    },
+    {
+        "name": "Legal Ethics and Professional Responsibility",
+        "author": "Richard A. Zitrin",
+        "genre": "Legal Ethics",
+        "image": "https://i.ibb.co/tMfHXTj4/Legal-Ethics-and-Professional-Responsibility.jpg",
+        "quantity": 4,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Examines ethical standards and rules governing legal practice, lawyer-client relationships, and professional conduct."
+    },
+    {
+        "name": "Administrative Law and Regulatory Policy",
+        "author": "Peter L. Strauss",
+        "genre": "Administrative Law",
+        "image": "https://i.ibb.co/PsyjKHKD/Administrative-Law-and-Regulatory-Policy.jpg",
+        "quantity": 5,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Discusses administrative agencies’ powers, rulemaking, adjudication, and judicial review in regulatory policy."
+    },
+    {
+        "name": "Family Law: Cases and Materials",
+        "author": "Judith Areen",
+        "genre": "Family Law",
+        "image": "https://i.ibb.co/j9Bc7Ftt/Family-Law.jpg",
+        "quantity": 6,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Focuses on marriage, divorce, child custody, adoption, and domestic violence, using case law and statutes."
+    },
+    {
+        "name": "Environmental Law and Policy",
+        "author": "Richard L. Revesz",
+        "genre": "Environmental Law",
+        "image": "https://i.ibb.co/m5vswBxd/Environmental-Law-and-Policy.jpg",
+        "quantity": 5,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Explores environmental regulation, policy instruments, and litigation concerning air, water, and land use."
+    },
+    {
+        "name": "Intellectual Property Law",
+        "author": "Jessica Litman",
+        "genre": "Intellectual Property",
+        "image": "https://i.ibb.co/tpkY3tnp/Intellectual-Property-Law.jpg",
+        "quantity": 6,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers copyrights, patents, trademarks, and trade secrets, emphasizing protection and enforcement in the digital age."
+    },
+    {
+        "name": "Civil Procedure",
+        "author": "Stephen C. Yeazell",
+        "genre": "Civil Procedure",
+        "image": "https://i.ibb.co/cKqCT26Q/Civil-Procedure.jpg",
+        "quantity": 5,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Discusses rules and processes of civil litigation, jurisdiction, pleadings, motions, and appeals."
+    },
+    {
+        "name": "Criminal Procedure: Investigation",
+        "author": "Wayne R. LaFave",
+        "genre": "Criminal Procedure",
+        "image": "https://i.ibb.co/q3MDyqfZ/Criminal-Procedure.jpg",
+        "quantity": 4,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Analyzes the procedural aspects of criminal investigations, including search and seizure, interrogations, and confessions."
+    },
+    {
+        "name": "Human Rights Law",
+        "author": "Diane F. Orentlicher",
+        "genre": "Human Rights",
+        "image": "https://i.ibb.co/FbCwcMr8/Human-Rights-Law.jpg",
+        "quantity": 5,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Examines international human rights frameworks, enforcement mechanisms, and case law addressing fundamental freedoms and protections."
+    },
+    {
+        "name": "Legal Research and Writing",
+        "author": "Jane B. Singer",
+        "genre": "Legal Research",
+        "image": "https://i.ibb.co/WN6rk9zh/Legal-Research-and-Writing.jpg",
+        "quantity": 6,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Provides instruction on researching legal issues, writing memoranda, briefs, and persuasive legal documents."
+    },
+    {
+        "name": "Law and Economics",
+        "author": "Richard A. Posner",
+        "genre": "Law and Economics",
+        "image": "https://i.ibb.co/21m8vN9P/Law-and-Economics.jpg",
+        "quantity": 4,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Applies economic theory to legal issues, analyzing how laws affect economic efficiency and behavior."
+    },
+    {
+        "name": "International Humanitarian Law",
+        "author": "Yoram Dinstein",
+        "genre": "International Law",
+        "image": "https://i.ibb.co/qMwFB4RQ/International-Humanitarian-Law.png",
+        "quantity": 5,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Studies laws governing armed conflict, protections for non-combatants, and enforcement of international treaties."
+    },
+    {
+        "name": "Comparative Constitutional Law",
+        "author": "Vicki C. Jackson",
+        "genre": "Constitutional Law",
+        "image": "https://i.ibb.co/twv8n1Kv/Comparative-Constitutional-Law.jpg",
+        "quantity": 3,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Compares constitutional systems across countries, focusing on rights, governance, and judicial review."
+    },
+    {
+        "name": "Corporate law and corporate governance",
+        "author": "Mongalo T, Scott T",
+        "genre": "Corporate Law",
+        "image": "https://i.ibb.co/C545L5vX/Corporate-law-and-corporate-governance.png",
+        "quantity": 6,
+        "category": "Law",
+        "link": "https://drive.google.com/file/d/1CUmSb1vFWAEWQMiQVjldZWdngb0HQJUQ/view?usp=sharing",
+        "details": "Covers formation, management, and regulation of corporations, including shareholder rights and fiduciary duties."
+    }
+]

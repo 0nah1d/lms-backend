@@ -7,7 +7,8 @@
         "build": "tsc",
         "swagger": "ts-node src/config/swagger.ts",
         "fix": "prettier --write .",
-        "createadmin": "ts-node src/script/createAdmin.ts"
+        "createadmin": "ts-node src/script/createAdmin.ts",
+        "create-data": "ts-node src/config/fake-data.ts"
     },
     "dependencies": {
         "@types/jsonwebtoken": "^9.0.10",

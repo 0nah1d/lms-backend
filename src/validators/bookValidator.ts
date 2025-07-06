@@ -29,5 +29,5 @@ export const bookSchema = Joi.object({
     stock: Joi.number().required().messages({
         'number.base': 'Stock must be a number',
         'any.required': 'Stock is required',
-    })
+    }),
 })

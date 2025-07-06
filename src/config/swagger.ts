@@ -6,7 +6,7 @@ dotenv.config()
 
 const swagger = swaggerAutogen()
 
-const outputFile = path.resolve(__dirname, '../../swagger.json');
+const outputFile = path.resolve(__dirname, '../../swagger.json')
 const endpointsFiles = [path.join(__dirname, '../routes/*.ts')]
 
 const doc = {

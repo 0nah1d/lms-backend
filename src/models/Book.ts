@@ -17,7 +17,7 @@ const bookSchema = new Schema<IBook>({
     genre: { type: String },
     image_url: { type: String },
     description: { type: String },
-    book_link: { type: String},
+    book_link: { type: String },
     department: {
         type: Schema.Types.ObjectId,
         ref: 'Department',

@@ -1,0 +1,9 @@
+[
+    { "name": "CSE", "description": "Computer Science and Engineering" },
+    { "name": "EEE", "description": "Electrical and Electronic Engineering" },
+    { "name": "Civil", "description": "Civil Engineering" },
+    { "name": "BBA", "description": "Bachelor of Business Administration" },
+    { "name": "English", "description": "Department of English" },
+    { "name": "Law", "description": "Department of Law" },
+    { "name": "Islamic", "description": "Department of Islamic Studies" }
+]
