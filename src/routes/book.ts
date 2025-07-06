@@ -27,7 +27,9 @@ router.get('/', async (req: Request, res: Response) => {
         }
 
         if (department) {
-            const dept = await Department.findOne({ name: department })
+            const dept = await Department.findOne({
+                name: { $regex: `^${department}$`, $options: 'i' },
+            })
             if (dept) {
                 query.department = dept._id
             } else {
