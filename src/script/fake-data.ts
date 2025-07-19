@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import Department from '../models/Department'
 import Book from '../models/Book'
-import connectDB from './db'
+import connectDB from '../config/db'
 
 // Normalize strings for case-insensitive matching
 const normalize = (str: string) => str.trim().toLowerCase()

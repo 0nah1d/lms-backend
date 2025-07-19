@@ -18,6 +18,29 @@ interface LoginRequestBody {
     password: string
 }
 
+/**
+ * @swagger
+ * tags:
+ *   name: Auth
+ *   description: Authentication and user management
+ */
+
+/**
+ * @swagger
+ * /register:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Register a new user
+ *     requestBody:
+ *       required: true
+ *     responses:
+ *       201:
+ *         description: User created successfully.
+ *       400:
+ *         description: Validation error or user already exists.
+ *       500:
+ *         description: Internal server error.
+ */
 router.post(
     '/register',
     validate(registerSchema),
@@ -56,6 +79,22 @@ router.post(
     }
 )
 
+/**
+ * @swagger
+ * /login:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Login with username/email and password
+ *     requestBody:
+ *       required: true
+ *     responses:
+ *       200:
+ *         description: Login successful
+ *       401:
+ *         description: Invalid credentials
+ *       500:
+ *         description: JWT secret not configured
+ */
 router.post(
     '/login',
     async (req: Request<{}, {}, LoginRequestBody>, res: Response) => {
