@@ -79,22 +79,6 @@ router.post(
     }
 )
 
-/**
- * @swagger
- * /login:
- *   post:
- *     tags: [Auth]
- *     summary: Login with username/email and password
- *     requestBody:
- *       required: true
- *     responses:
- *       200:
- *         description: Login successful
- *       401:
- *         description: Invalid credentials
- *       500:
- *         description: JWT secret not configured
- */
 router.post(
     '/login',
     async (req: Request<{}, {}, LoginRequestBody>, res: Response) => {
@@ -132,6 +116,7 @@ router.post(
                     username: user.username,
                     email: user.email,
                     role: user.role,
+                    id: user._id
                 },
                 message: 'Login successful.',
             })

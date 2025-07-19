@@ -67,7 +67,14 @@ router.delete(
             const comment = await Comment.findById(req.params.id)
 
             if (!comment) {
-                res.status(404).json({ message: 'Comment not found' })
+                 res.status(404).json({ message: 'Comment not found' })
+                return
+            }
+
+            if (comment.user.toString() !== (req as any).user.id) {
+                 res
+                    .status(403)
+                    .json({ message: 'You are not authorized to delete this comment' })
                 return
             }
 
@@ -76,7 +83,8 @@ router.delete(
         } catch (error: any) {
             res.status(400).json({ message: error.message })
         }
-    },
+    }
 )
+
 
 export default router
